@@ -3,7 +3,6 @@ config()
 import {  Configuration, OpenAIApi } from "openai";
 import * as fs from 'fs';
 
-
 const configuration = new Configuration({
     apiKey:process.env.OPEN_AI_KEY
 })
@@ -23,7 +22,5 @@ console.log(url)
 const imageResult = await fetch(url)
 const blob = await imageResult.blob()
 
-
-const buffer = Buffer.from( await blob.arrayBuffer() )
-
+const buffer = Buffer.from( await blob.arrayBuffer())
 fs.writeFileSync(`./img/${Date.now()}.png`, buffer)
