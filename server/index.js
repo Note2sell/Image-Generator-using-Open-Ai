@@ -23,6 +23,7 @@ console.log(url)
 const imageResult = await fetch(url)
 const blob = await imageResult.blob()
 
+
 const buffer = Buffer.from( await blob.arrayBuffer() )
 
 fs.writeFileSync(`./img/${Date.now()}.png`, buffer)
