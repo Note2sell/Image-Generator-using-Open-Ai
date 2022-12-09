@@ -1,5 +1,5 @@
 # About
- This app uses **open-api** to generate images that users in form of art according to users' prompt
+ This app uses **open-api** to generate images for the users in form of art according to users' prompt
 
 ## Backend
 The app uses a  nodejs sdk to generate the images, currently, am only working on the backend ..
